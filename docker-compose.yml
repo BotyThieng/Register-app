@@ -1,0 +1,11 @@
+version: "3.12"
+services:
+  loginapp:
+    container_name: loginapp
+    build:
+      context: .
+    ports: 
+      - "8000:8000"
+    volumes:
+      - .:/app
+    restart: "always"
